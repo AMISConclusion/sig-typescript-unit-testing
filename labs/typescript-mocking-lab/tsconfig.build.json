@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist", /* output directory for the JS code */
+    "rootDir": "src"  /*  the root of the tree at outDir */
+  },
+  "exclude": ["test"]
+}
