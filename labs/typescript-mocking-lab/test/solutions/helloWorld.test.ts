@@ -37,6 +37,9 @@ describe('HelloWorld', () => {
     vi.mocked(getAgeFromDate).mockReturnValue(37)
     const res = helloWorld(person)
     expect(res).toBe('Hello, Joost! You are 37 years old.')
+    // you can use matchers inside toHAvBeenCalledWith
+    expect(getAgeFromDate).toHaveBeenCalledWith(expect.any(Date))
+    // alternatively, check the exact date
     expect(getAgeFromDate).toHaveBeenCalledWith(birthdate)
     expect(getPersonInfo).not.toHaveBeenCalled()
   })

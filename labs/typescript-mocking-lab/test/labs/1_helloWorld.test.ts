@@ -22,6 +22,7 @@ describe('HelloWorld', () => {
     const res = helloWorld(person)
     expect(res).toBe('Hello, Joost! You are 37 years old.')
     // check if the getAgeFromDate function was called with the birthdate
+    // Bonus: check that the getAgeFromDate function was called with any Date object
     // check that the getAgeFromDage function was called exactly once
   })
   //2. Mock error from synchronus function
