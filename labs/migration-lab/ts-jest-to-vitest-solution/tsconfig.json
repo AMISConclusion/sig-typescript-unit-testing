@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true /* Skips checking the types of .d.ts files. This is important for performance, because otherwise all node_modules will be checked. */,
+    "target": "es2022",
+    "allowJs": true /* Allows you to import .js files. */,
+    "resolveJsonModule": true /* Allows you to import .json files. */,
+    "moduleDetection": "force" /* This option forces TypeScript to consider all files as modules. This helps to avoid 'cannot redeclare block-scoped variable' errors. */,
+
+    /* Transpiling options */
+    "moduleResolution": "NodeNext" /* node16 or nodenext */,
+    "module": "NodeNext" /* node16 or nodenext */,
+    "outDir": "dist",
+    "sourceMap": true,
+
+    "rootDir": ".",
+    "strict": true,
+  }
+}
